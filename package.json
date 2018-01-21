@@ -1,0 +1,43 @@
+{
+  "name": "js2flowchart-contrib",
+  "version": "1.0.0",
+  "description": "Contribution to js2flowchart package",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint index.js",
+    "restart": "echo \"restarting...\"",
+    "start": "node index.js",
+    "start:dev": "node index.js 4000",
+    "stop": "echo \"stopping...\"",
+    "pretest": "npm run lint",
+    "test": "mocha test -u bdd -R spec",
+    "posttest": "echo \"post testing.....\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhatIfWeDigDeeper/js2flowchart-contrib.git"
+  },
+  "keywords": [
+    "documentation",
+    "javascript"
+  ],
+  "author": "WhatIfWeDigDeeper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WhatIfWeDigDeeper/js2flowchart-contrib/issues"
+  },
+  "homepage": "https://github.com/WhatIfWeDigDeeper/js2flowchart-contrib#readme",
+  "devDependencies": {
+    "eslint": "^4.16.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^5.0.0",
+    "should": "^13.2.1",
+    "supertest": "^3.0.0"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.6.1",
+    "babel-register": "^6.26.0",
+    "koa": "^2.4.1"
+  }
+}

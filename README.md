@@ -20,4 +20,25 @@ Contribution to js2flowchart to allow for more customization
 * combine with double ampersands
 * combine with ; which ignores exit codes of previous commands
 * combine with pipe | when calling non-npm commands?
+* bash script (but then not win compatible)
+
+
+    "deploy:prod:script": "bash ./deployProd.sh"
+
+Can pass options through
+
+    npm run test -- -R
+
+* get timing
+
+
+    "time": "time(npm run deploy:prod)"
+    
+
+    
+* list npm commands
+
+
+    npm run
+    
 

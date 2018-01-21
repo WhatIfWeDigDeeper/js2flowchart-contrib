@@ -8,7 +8,9 @@ app.use((ctx) => {
 });
 
 const port = process.env.PORT || (process.argv[2] || 3000);
-app.listen(port);
-console.log(`app listening on port ${port}`);
+if (!module.parent) {
+  app.listen(port);
+  console.log(`app listening on port ${port}`);
+}
 
 module.exports.app = app;

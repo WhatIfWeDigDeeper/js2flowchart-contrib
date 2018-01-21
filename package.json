@@ -4,6 +4,7 @@
   "description": "Contribution to js2flowchart package",
   "main": "index.js",
   "scripts": {
+    "clean": "rimraf lib/*",
     "lint": "./node_modules/.bin/eslint index.js",
     "restart": "echo \"restarting...\"",
     "start": "node index.js",
@@ -11,7 +12,11 @@
     "stop": "echo \"stopping...\"",
     "pretest": "npm run lint",
     "test": "mocha test -u bdd -R spec",
-    "posttest": "echo \"post testing.....\""
+    "posttest": "echo \"post testing.....\"",
+    "test:watch": "npm run test -- -w -R min",
+    "version:major": "npm version major",
+    "version:minor": "npm version minor",
+    "version:patch": "npm version patch"
   },
   "repository": {
     "type": "git",

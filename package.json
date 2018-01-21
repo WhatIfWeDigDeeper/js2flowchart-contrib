@@ -16,7 +16,9 @@
     "test:watch": "npm run test -- -w -R min",
     "version:major": "npm version major",
     "version:minor": "npm version minor",
-    "version:patch": "npm version patch"
+    "version:patch": "npm version patch",
+    "prepush": "npm version patch",
+    "push": "git push"
   },
   "repository": {
     "type": "git",
